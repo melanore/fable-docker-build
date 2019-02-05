@@ -1,4 +1,4 @@
-ARG ASPNET_VERSION=2.1.401
+ARG ASPNET_VERSION=2.2.103
 
 FROM microsoft/dotnet:${ASPNET_VERSION}-sdk-stretch
 
