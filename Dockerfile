@@ -3,7 +3,7 @@ ARG ASPNET_VERSION=2.2.103
 FROM microsoft/dotnet:${ASPNET_VERSION}-sdk-stretch
 
 # Install Mono
-ARG MONO_VERSION=5.14.0.177
+ARG MONO_VERSION=5.18.0.240
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF \
   && echo "deb http://download.mono-project.com/repo/debian stable-stretch/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official-stable.list \
   && cat /etc/apt/sources.list.d/mono-official-stable.list \
